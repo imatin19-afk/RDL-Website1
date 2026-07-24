@@ -1,0 +1,447 @@
+html::before {
+  content: 'CodePen ♥ The Web';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  opacity: 0.6;
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    margin:0;
+    color:white;
+
+    background:linear-gradient(
+        120deg,
+        #0066ff,
+        #00ffff,
+        #ffd000,
+        #ff0000,
+        #0066ff
+    );
+
+    background-size:400% 400%;
+    animation:backgroundMove 12s ease infinite;
+}
+
+
+@keyframes backgroundMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#080d20dd;
+    backdrop-filter:blur(10px);
+}
+
+
+nav h1{
+    color:#00aaff;
+    font-size:32px;
+    margin:0;
+}
+
+
+nav div{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+.discord{
+    background:#5865F2;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+
+.discord:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #5865F2;
+}
+
+
+
+
+.button{
+    display:inline-block;
+    background:#008cff;
+    padding:12px 22px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+
+.button:hover{
+    transform:scale(1.05);
+}
+
+
+
+
+
+/* HOME */
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:linear-gradient(#0008,#0008);
+}
+
+
+
+.logo{
+    width:180px;
+    filter:drop-shadow(0 0 20px #008cff);
+}
+
+
+
+.hero h1{
+    font-size:55px;
+    text-shadow:0 0 20px #008cff;
+}
+
+
+
+.season{
+    color:#ffd000;
+    font-size:35px;
+    text-shadow:0 0 15px #ffd000;
+}
+
+
+
+
+section{
+    padding:60px 10%;
+}
+
+
+h2{
+    text-align:center;
+    font-size:40px;
+}
+
+
+
+
+
+/* BOXES */
+
+.about-box,
+.rules-box{
+
+    max-width:900px;
+    margin:auto;
+
+    background:#10172ddd;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 30px #008cff55;
+
+    line-height:1.6;
+
+}
+
+
+
+.about-box h3,
+.rules-box h3{
+
+    color:#00aaff;
+
+}
+
+
+
+
+
+/* RANKS */
+
+.rank-box{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.rank-card{
+
+    background:#10172ddd;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px #008cff33;
+
+    transition:.3s;
+
+}
+
+
+
+.rank-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 30px #ffd00088;
+
+}
+
+
+
+.rank-card b{
+
+    color:#ffd000;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+/* LEADERBOARD */
+
+.table{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#10172ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.header,
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr 1fr 1fr;
+
+    padding:20px;
+
+}
+
+
+
+.header{
+
+    background:#008cff;
+
+}
+
+
+
+.row{
+
+    border-bottom:1px solid #ffffff15;
+
+}
+
+
+
+.row:hover{
+
+    background:#008cff22;
+
+}
+
+
+
+.gold{
+
+    background:#ffd70022;
+
+}
+
+
+.silver{
+
+    background:#c0c0c022;
+
+}
+
+
+.bronze{
+
+    background:#cd7f3222;
+
+}
+
+
+
+
+
+/* TEAMS */
+
+.teams-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.team-card{
+
+    background:#10172ddd;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px #008cff33;
+
+    transition:.3s;
+
+}
+
+
+
+.team-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* STAFF */
+
+.staff-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.staff-card{
+
+    background:#10172ddd;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px #008cff33;
+
+}
+
+
+
+
+
+.warning{
+
+    background:#ffcc0033;
+
+    border-left:5px solid #ffcc00;
+
+    padding:15px;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#080d20dd;
+
+}

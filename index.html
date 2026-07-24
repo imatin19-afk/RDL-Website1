@@ -1,447 +1,769 @@
-html::before {
-  content: 'CodePen ♥ The Web';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-  font-family: monospace;
-  opacity: 0.6;
-  background: rebeccapurple;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-*{
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
 
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
 
-body{
-    margin:0;
-    color:white;
+<head>
 
-    background:linear-gradient(
-        120deg,
-        #0066ff,
-        #00ffff,
-        #ffd000,
-        #ff0000,
-        #0066ff
-    );
+<title>RDL | Rivals Default League S1</title>
 
-    background-size:400% 400%;
-    animation:backgroundMove 12s ease infinite;
-}
+<link rel="stylesheet" href="style.css">
 
+</head>
 
-@keyframes backgroundMove{
 
-    0%{
-        background-position:0% 50%;
-    }
+<body>
 
-    50%{
-        background-position:100% 50%;
-    }
 
-    100%{
-        background-position:0% 50%;
-    }
+<nav>
 
-}
+<h1>RDL</h1>
 
+<div>
 
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#ranks">Ranks</a>
+<a href="#standings">Standings</a>
+<a href="#teams">Teams</a>
+<a href="#rules">Rules</a>
+<a href="#staff">Staff</a>
+<a href="#fairplay">Fair Play</a>
 
-/* NAVBAR */
+<a class="button" href="https://discord.gg/2rYhDyhdm">
+Join RDL
+</a>
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#080d20dd;
-    backdrop-filter:blur(10px);
-}
+</div>
 
+</nav>
 
-nav h1{
-    color:#00aaff;
-    font-size:32px;
-    margin:0;
-}
 
 
-nav div{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
 
 
-nav a{
-    color:white;
-    text-decoration:none;
-}
+<section id="home" class="hero">
 
+<img src="logo.png" class="logo">
 
+<h1>🏆 RIVALS DEFAULT LEAGUE 🏆</h1>
 
-.discord{
-    background:#5865F2;
-    padding:12px 22px;
-    border-radius:10px;
-    font-weight:bold;
-    transition:.3s;
-}
+<h2 class="season">S1</h2>
 
+<p>
+The next generation of competitive Roblox Rivals starts here.
+</p>
 
-.discord:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px #5865F2;
-}
+<a class="button" href="https://discord.gg/mQ4q2bkYb">
+Join RDL
+</a>
 
+</section>
 
 
 
-.button{
-    display:inline-block;
-    background:#008cff;
-    padding:12px 22px;
-    border-radius:10px;
-    color:white;
-    text-decoration:none;
-    transition:.3s;
-}
 
 
-.button:hover{
-    transform:scale(1.05);
-}
 
 
+<section id="about">
 
+<h2>🏆 RDL — Rivals Default League 🏆</h2>
 
 
-/* HOME */
+<div class="about-box">
 
-.hero{
-    height:80vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
 
-    background:linear-gradient(#0008,#0008);
-}
+<h3>
+⚡ The next generation of competitive Roblox Rivals starts here.
+</h3>
 
 
+<p>
+🔥 Sign your team. Draft top talent. Compete for glory.
+</p>
 
-.logo{
-    width:180px;
-    filter:drop-shadow(0 0 20px #008cff);
-}
 
 
+<h3>🎯 What RDL Offers</h3>
 
-.hero h1{
-    font-size:55px;
-    text-shadow:0 0 20px #008cff;
-}
 
+<ul>
 
+<li>🏅 Competitive Default League</li>
 
-.season{
-    color:#ffd000;
-    font-size:35px;
-    text-shadow:0 0 15px #ffd000;
-}
+<li>📝 Team Signings & Player Contracts</li>
 
+<li>🎲 Player Drafts & Free Agency</li>
 
+<li>⚔️ Weekly League Matches</li>
 
+<li>📊 Rankings, Stats & Leaderboards</li>
 
-section{
-    padding:60px 10%;
-}
+<li>🎥 Community Events & Tournaments</li>
 
+<li>🏆 Championship Playoffs</li>
 
-h2{
-    text-align:center;
-    font-size:40px;
-}
+</ul>
 
 
 
 
+<p>
+💼 Own a team? Build your roster through signings and drafts.
+</p>
 
-/* BOXES */
 
-.about-box,
-.rules-box{
+<p>
+🎮 Looking for a team? Enter the draft, get noticed, and earn your spot on a competitive roster.
+</p>
 
-    max-width:900px;
-    margin:auto;
 
-    background:#10172ddd;
+<p>
+🌟 Whether you’re a captain, manager, or player, RDL gives you a place to compete, improve, and make your name known.
+</p>
 
-    padding:35px;
 
-    border-radius:20px;
+<p>
+📩 Join today and be part of the next draft class or sign your roster before the season begins!
+</p>
 
-    box-shadow:0 0 30px #008cff55;
 
-    line-height:1.6;
+<a class="button" href="https://discord.gg/2rYhDyhdm">
+Join The Draft
+</a>
 
-}
 
+</div>
 
 
-.about-box h3,
-.rules-box h3{
+</section>
+<section id="ranks">
 
-    color:#00aaff;
+<h2>🏆 RDL Rank System</h2>
 
-}
 
+<div class="rank-box">
 
 
+<div class="rank-card">
+🛑 <b>D1 - Noob</b><br>
+Brand new player.
+</div>
 
 
-/* RANKS */
+<div class="rank-card">
+🌱 <b>D2 - Novice</b><br>
+Learning core mechanics.
+</div>
 
-.rank-box{
 
-    max-width:900px;
+<div class="rank-card">
+⚔️ <b>D3 - Amateur</b><br>
+Getting competitive experience.
+</div>
 
-    margin:auto;
 
-    display:grid;
+<div class="rank-card">
+🛡️ <b>D4 - Standard</b><br>
+Decent baseline skills.
+</div>
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-    gap:20px;
+<div class="rank-card">
+⚡ <b>D5 - Pro</b><br>
+Comfortable and consistent.
+</div>
 
-}
 
+<div class="rank-card">
+🔮 <b>D6 - Expert</b><br>
+High-level mechanical execution.
+</div>
 
 
-.rank-card{
+<div class="rank-card">
+👑 <b>D7 - Master</b><br>
+Dominating most matches.
+</div>
 
-    background:#10172ddd;
 
-    padding:25px;
+<div class="rank-card">
+🌟 <b>D8 - Grandmaster</b><br>
+Elite strategic thinker.
+</div>
 
-    border-radius:15px;
 
-    text-align:center;
+<div class="rank-card">
+🏆 <b>D9 - Legend</b><br>
+Globally recognized talent.
+</div>
 
-    box-shadow:0 0 20px #008cff33;
 
-    transition:.3s;
+<div class="rank-card">
+🌌 <b>D10 - Immortal</b><br>
+Flawless, peak performance.
+</div>
 
-}
 
+<div class="rank-card">
+👑 <b>D11 - OVERLORD</b><br>
+ONE ABOVE ALL.
+</div>
 
 
-.rank-card:hover{
+</div>
 
-    transform:translateY(-5px);
+</section>
 
-    box-shadow:0 0 30px #ffd00088;
 
-}
 
 
 
-.rank-card b{
 
-    color:#ffd000;
 
-    font-size:22px;
+<section id="standings">
 
-}
+<h2>🏆 RDL S1 Standings</h2>
 
 
+<div class="table">
 
 
+<div class="header">
 
-/* LEADERBOARD */
+<span>Rank</span>
+<span>Team</span>
+<span>Record</span>
+<span>Points</span>
 
-.table{
+</div>
 
-    max-width:900px;
 
-    margin:auto;
 
-    background:#10172ddd;
+<div class="row gold">
+<span>🥇 1</span>
+<span>QP</span>
+<span>3-0</span>
+<span>9</span>
+</div>
 
-    border-radius:20px;
 
-    overflow:hidden;
 
-}
+<div class="row silver">
+<span>🥈 2</span>
+<span>AXIS</span>
+<span>3-0</span>
+<span>9</span>
+</div>
 
 
 
-.header,
-.row{
+<div class="row bronze">
+<span>🥉 3</span>
+<span>Solar</span>
+<span>3-1</span>
+<span>9</span>
+</div>
 
-    display:grid;
 
-    grid-template-columns:1fr 2fr 1fr 1fr;
 
-    padding:20px;
+<div class="row">
+<span>4</span>
+<span>ERA</span>
+<span>3-1</span>
+<span>9</span>
+</div>
 
-}
 
 
+<div class="row">
+<span>5</span>
+<span>Nite</span>
+<span>2-2</span>
+<span>6</span>
+</div>
 
-.header{
 
-    background:#008cff;
 
-}
+<div class="row">
+<span>6</span>
+<span>Pure</span>
+<span>1-2</span>
+<span>3</span>
+</div>
 
 
 
-.row{
+<div class="row">
+<span>7</span>
+<span>Tokyo</span>
+<span>1-3</span>
+<span>3</span>
+</div>
 
-    border-bottom:1px solid #ffffff15;
 
-}
 
+<div class="row">
+<span>8</span>
+<span>Unknown</span>
+<span>1-3</span>
+<span>3</span>
+</div>
 
 
-.row:hover{
 
-    background:#008cff22;
+<div class="row">
+<span>9</span>
+<span>777</span>
+<span>1-3</span>
+<span>3</span>
+</div>
 
-}
 
 
+<div class="row">
+<span>10</span>
+<span>Quad</span>
+<span>0-3</span>
+<span>0</span>
+</div>
 
-.gold{
 
-    background:#ffd70022;
 
-}
+</div>
 
+</section>
+<section id="teams">
 
-.silver{
+<h2>👥 RDL S1 Teams</h2>
 
-    background:#c0c0c022;
 
-}
+<div class="teams-grid">
 
 
-.bronze{
+<div class="team-card">
+<h3>QP</h3>
+<p>Record: 3-0</p>
+</div>
 
-    background:#cd7f3222;
 
-}
+<div class="team-card">
+<h3>AXIS</h3>
+<p>Record: 3-0</p>
+</div>
 
 
+<div class="team-card">
+<h3>Solar</h3>
+<p>Record: 3-1</p>
+</div>
 
 
+<div class="team-card">
+<h3>ERA</h3>
+<p>Record: 3-1</p>
+</div>
 
-/* TEAMS */
 
-.teams-grid{
+<div class="team-card">
+<h3>Nite</h3>
+<p>Record: 2-2</p>
+</div>
 
-    display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+<div class="team-card">
+<h3>Pure</h3>
+<p>Record: 1-2</p>
+</div>
 
-    gap:20px;
 
-}
+<div class="team-card">
+<h3>Tokyo</h3>
+<p>Record: 1-3</p>
+</div>
 
 
+<div class="team-card">
+<h3>Unknown</h3>
+<p>Record: 1-3</p>
+</div>
 
-.team-card{
 
-    background:#10172ddd;
+<div class="team-card">
+<h3>777</h3>
+<p>Record: 1-3</p>
+</div>
 
-    padding:25px;
 
-    border-radius:15px;
+<div class="team-card">
+<h3>Quad</h3>
+<p>Record: 0-3</p>
+</div>
 
-    text-align:center;
 
-    box-shadow:0 0 20px #008cff33;
+</div>
 
-    transition:.3s;
+</section>
 
-}
 
 
 
-.team-card:hover{
 
-    transform:translateY(-5px);
 
-}
 
+<section id="rules">
 
 
+<h2>📜 RDL S1 League Rules</h2>
 
 
-/* STAFF */
+<div class="rules-box">
 
-.staff-list{
 
-    display:grid;
+<h3>ℹ️ League Rules</h3>
 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-    gap:20px;
+<ul>
 
-}
+<li>You cannot play in a clan war if you have <b>Perm Event BAN</b>.</li>
 
+<li>You must record your games if you have <b>Exploiter 🛡️ (must record)</b> or <b>Perm Recording Policy (T1)</b>.</li>
 
+<li>Auto-shoot is <b>OFF</b> for mobile/console.</li>
 
-.staff-card{
+<li>AHK and custom Roblox audio modifications are <b>banned</b>.</li>
 
-    background:#10172ddd;
+</ul>
 
-    padding:20px;
 
-    border-radius:15px;
 
-    text-align:center;
 
-    box-shadow:0 0 20px #008cff33;
+<h3>⚔️ Current Loadouts in RDL</h3>
 
-}
 
+<h4>ℹ️ Default Loadout</h4>
 
+<p>
+<b>Primary:</b> Assault Rifle<br>
+<b>Secondary:</b> Handgun<br>
+<b>Melee:</b> Fist<br>
+<b>Utility:</b> Grenade
+</p>
 
 
 
-.warning{
 
-    background:#ffcc0033;
+<h4>ℹ️ Custom Loadout</h4>
 
-    border-left:5px solid #ffcc00;
+<p>
+<b>Primaries:</b> AR, Burst<br>
+<b>Secondaries:</b> Handgun, Rev, Spray, Uzi<br>
+<b>Melee:</b> Fist, Scythe, Chainsaw, Battle Axe<br>
+<b>Utilities:</b> Grenade, Flashbang, Molotov, War Horn
+</p>
 
-    padding:15px;
 
-    border-radius:10px;
 
-}
 
+<h4>ℹ️ Ranked Loadout</h4>
 
+<p>
+All weapons are allowed unless clan owners agree otherwise.
+</p>
 
 
 
-footer{
 
-    text-align:center;
+<h3>🏆 Current RDL Map Pool</h3>
 
-    padding:30px;
 
-    background:#080d20dd;
+<h4>1v1s</h4>
 
-}
+<p>
+Arena, Battlegrounds, Splash, Docks, Big Arena, Legacy Docks, Legacy Battlegrounds, Station, Sandbox
+</p>
+
+
+
+<h4>2v2s</h4>
+
+<p>
+Battleground, Docks, Big Arena, Legacy Battleground, Legacy Docks, Arena
+</p>
+
+
+
+<h4>3v3s & 4v4s</h4>
+
+<p>
+Battleground, Docks, Big Arena, Legacy Battleground, Legacy Docks, Legacy Crossroads
+</p>
+
+
+
+
+<div class="warning">
+
+⚠️ Use common sense. If you're unsure if something's allowed, assume it isn't.
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<section id="staff">
+
+
+<h2>👑 RDL S1 Staff Team</h2>
+
+
+<div class="staff-list">
+
+
+<div class="staff-card">1percent</div>
+
+<div class="staff-card">5foot1_600lb</div>
+
+<div class="staff-card">CatDesu (@W...)</div>
+
+<div class="staff-card">Lobotomized</div>
+
+<div class="staff-card">Mintyy (Ping for help)</div>
+
+<div class="staff-card">Moerkets_konge</div>
+
+<div class="staff-card">ONYX_MRFL...</div>
+
+<div class="staff-card">Revo (SHAIK...)</div>
+
+<div class="staff-card">Solar_Flix</div>
+
+<div class="staff-card">Torin</div>
+
+<div class="staff-card">V11YN (@Em...)</div>
+
+<div class="staff-card">Zen</div>
+
+<div class="staff-card">[AFK] someone</div>
+
+<div class="staff-card">cole</div>
+
+<div class="staff-card">drowzzie</div>
+
+<div class="staff-card">gay for h/drow...</div>
+
+<div class="staff-card">h</div>
+
+<div class="staff-card">harmfulmemori...</div>
+
+<div class="staff-card">i</div>
+
+<div class="staff-card">narrreed (...)</div>
+
+<div class="staff-card">qtxy (@evlllst)</div>
+
+<div class="staff-card">sad936s</div>
+
+<div class="staff-card">shyshy_thereal</div>
+
+<div class="staff-card">the fuck is a kilometre</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="fairplay">
+
+
+<h2>🛡️ RDL Fair Play Policy</h2>
+
+
+<div class="rules-box">
+
+
+<h3>🤝 Respect All Players</h3>
+
+<ul>
+
+<li>Treat everyone with respect before, during, and after matches.</li>
+
+<li>Friendly banter is allowed, but harassment, bullying, or targeted insults are not.</li>
+
+<li>No discrimination, hate speech, or offensive slurs of any kind.</li>
+
+</ul>
+
+
+
+
+<h3>💬 Toxic Behavior</h3>
+
+<p>The following is prohibited:</p>
+
+<ul>
+
+<li>Excessive trash talk intended to provoke or harass.</li>
+
+<li>Personal attacks or insults.</li>
+
+<li>Threats or encouraging others to target a player.</li>
+
+<li>Spamming, flaming, or intentionally creating drama.</li>
+
+<li>Witch-hunting or public callouts without evidence.</li>
+
+<li>Overuse of toxic emotes (example: Take the L).</li>
+
+</ul>
+
+
+
+
+<h3>🏆 Good Sportsmanship</h3>
+
+<ul>
+
+<li>Win with humility.</li>
+
+<li>Lose respectfully.</li>
+
+<li>Shake off disagreements without escalating arguments.</li>
+
+<li>Respect referee and staff decisions while using the proper appeal process if necessary.</li>
+
+</ul>
+
+
+
+
+<h3>🚫 Unsportsmanlike Conduct</h3>
+
+<ul>
+
+<li>Intentionally disrupting matches.</li>
+
+<li>Delaying games without a valid reason.</li>
+
+<li>Refusing to cooperate with league staff.</li>
+
+<li>Attempting to provoke opponents into breaking rules.</li>
+
+<li>Encouraging teammates or fans to harass others.</li>
+
+</ul>
+
+
+
+
+<h3>📢 Reporting Conduct</h3>
+
+<ul>
+
+<li>Report rule violations privately to league staff.</li>
+
+<li>Provide screenshots, videos, or other evidence whenever possible.</li>
+
+<li>False reports or edited evidence may result in penalties.</li>
+
+</ul>
+
+
+
+
+<h3>⚖️ Disciplinary Actions</h3>
+
+<ul>
+
+<li>Warning</li>
+
+<li>Match mute</li>
+
+<li>Temporary suspension</li>
+
+<li>Match forfeiture (if behavior affects competition)</li>
+
+<li>Season suspension</li>
+
+<li>Permanent league ban</li>
+
+</ul>
+
+
+
+
+<h3>👤 Team Responsibility</h3>
+
+<ul>
+
+<li>Team captains are responsible for helping maintain good conduct within their roster.</li>
+
+<li>Repeated misconduct by multiple members of the same team may result in additional team penalties.</li>
+
+</ul>
+
+
+
+
+<h3>📜 Final Note</h3>
+
+<p>
+
+RDL is committed to providing a competitive, respectful, and enjoyable environment for all players.
+
+Toxicity, harassment, and unsportsmanlike behavior will not be tolerated.
+
+League staff reserve the right to investigate incidents and issue appropriate penalties to preserve competitive integrity.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 RDL - Rivals Default League S1
+</p>
+
+<p>
+🏆 Compete. Improve. Become Legendary.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
