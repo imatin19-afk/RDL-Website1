@@ -431,7 +431,36 @@ h2{
     border-radius:10px;
 
 }
+.champions-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
 
+.champion-card{
+    background:#1b1b1b;
+    border:2px solid gold;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.champion-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 20px gold;
+}
+
+.champion-card h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.champion-card p{
+    font-size:20px;
+    font-weight:bold;
+}
 
 
 
